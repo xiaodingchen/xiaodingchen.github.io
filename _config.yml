@@ -1,5 +1,8 @@
 title: Architect theme
 description: Architect is a theme for GitHub Pages.
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
+github:
+  owner_url: https://github.com/xiaodingchen
+
