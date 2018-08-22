@@ -68,7 +68,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Alone Coder."
-sidebar-avatar: /img/v.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/account/v.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
