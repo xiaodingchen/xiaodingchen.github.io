@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      "你好，世界"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2018-08-23 12:00:00
+author:     "MoTalk"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - 生活
+---
+
+> “Yeah It's on. ”
+
+Hello, world.
