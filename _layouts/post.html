@@ -140,16 +140,88 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!-- Friends Blog -->
-                {% if site.friends %}
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        {% if site.sidebar-avatar %}
+                            <img src="{{site.sidebar-avatar}}" />
+                        {% endif %}
+                        {% if site.sidebar-about-description %}
+                            <p>{{site.sidebar-about-description}}</p>
+                        {% endif %}
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            {% if site.RSS %}
+                            <li>
+                                <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.twitter_username %}
+                            <li>
+                                <a href="https://twitter.com/{{ site.twitter_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.zhihu_username %}
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.weibo_username %}
+                            <li>
+                                <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.facebook_username %}
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% if site.github_username %}
+                            <li>
+                                <a target="_blank" href="https://github.com/{{ site.github_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </section>
                 <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
+                <h5>支持我</h5>
+                <div class="short-about">
+                    <img src="/img/account/alipay.jpeg" />
+                    <img src="/img/account/wepay.jpeg" />
+                </div>
+                
             </div>
         </div>
     </div>
