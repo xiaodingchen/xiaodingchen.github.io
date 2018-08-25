@@ -191,6 +191,7 @@ PHP提供了很简单两个全局变量来操作cookie和session，分别是 `$_
 
 1、轮询算法(默认)
 >每个请求按时间顺序逐一分配到不同的后端服务器，如果后端服务器down掉，能自动剔除。
+
 ``` 
 upstream backserver { 
 server 192.168.0.14; 
@@ -204,8 +205,10 @@ server 192.168.0.14 weight=10;
 server 192.168.0.15 weight=10; 
 } 
 ```
+
 2、IP绑定 ip_hash
 >每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，可以解决session的问题。 
+
 ```
 upstream backserver { 
 ip_hash; 
@@ -217,6 +220,7 @@ server 192.168.0.15:80;
 
 3、fair（第三方）
 >按后端服务器的响应时间来分配请求，响应时间短的优先分配。 
+
 ```
 upstream backserver { 
 server server1; 
@@ -224,8 +228,10 @@ server server2;
 fair; 
 } 
 ```
+
 4、url_hash（第三方）
 >按访问url的hash结果来分配请求，使每个url定向到同一个后端服务器，后端服务器为缓存时比较有效。 
+
 ```
 upstream backserver { 
 server squid1:3128; 
@@ -234,6 +240,7 @@ hash $request_uri;
 hash_method crc32; 
 } 
 ```
+
 关于`Nginx`负责均衡算法策略的选择，要根据业务场景来选择,一般选择的标准可以参考这三个指标：<br>
 均衡性：是否能够将请求均匀的发送给后端<br>
 一致性：同一个key的请求，是否能落到同一台机器<br>
