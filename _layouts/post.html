@@ -17,11 +17,6 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <div class="tags">
-                        {% for tag in page.tags %}
-                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
                     <h1>{{ page.title }}</h1>
                     {% comment %}
                         always create a h2 for keeping the margin , Hux
@@ -124,21 +119,17 @@ layout: default
                 sidebar-container">
 
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="/tags/">TAGS</a></h5>
                     <div class="tags">
-        				{% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
-                				<a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
+        				{% for tag in page.tags %}
+                				<a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">
+                                    {{ tag }}
                                 </a>
-                            {% endif %}
         				{% endfor %}
         			</div>
                 </section>
-                {% endif %}
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
