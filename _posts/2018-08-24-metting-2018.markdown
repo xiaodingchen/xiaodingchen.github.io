@@ -7,6 +7,11 @@ author:     "MoTalk"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - PHP
+    - redis
+    - session
+    - 负载均衡
+    - 错误处理
+    - 秒杀系统
     - 面试
 ---
 
