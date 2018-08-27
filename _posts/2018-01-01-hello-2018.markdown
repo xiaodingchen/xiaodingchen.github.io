@@ -3,7 +3,7 @@ layout:     post
 title:      "你好，世界"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2018-01-01 12:00:00
-author:     "MoTalk"
+author:     "xiaodingchen"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 生活

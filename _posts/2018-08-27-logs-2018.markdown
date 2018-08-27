@@ -3,7 +3,7 @@ layout:     post
 title:      "PHP开发常用命令，持续更新中···"
 subtitle:   ""
 date:       2018-08-27 15:00:00
-author:     "MoTalk"
+author:     "xiaodingchen"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - PHP

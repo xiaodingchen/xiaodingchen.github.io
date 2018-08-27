@@ -3,7 +3,7 @@ layout:     post
 title:      "PHP面试总结 v20180824"
 subtitle:   "呀呀呀，面试总结"
 date:       2018-08-24 22:00:00
-author:     "MoTalk"
+author:     "xiaodingchen"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - PHP

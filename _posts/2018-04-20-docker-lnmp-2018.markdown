@@ -3,7 +3,7 @@ layout:     post
 title:      "Mac上通过docker配置PHP开发环境"
 subtitle:   ""
 date:       2018-04-20 22:00:00
-author:     "MOTalk"
+author:     "xiaodingchen"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - PHP
