@@ -102,7 +102,7 @@ COPY ./config/php.ini /usr/local/etc/php/conf.d/php.ini
 ### php服务中遇到的坑
 PHP这个镜像中软件是使用的Debian的源，因为众所周知的缘故会导致镜像安装不成功，如图所示：
 
-![clipboard.png](https://segmentfault.com/img/bV83L8)
+![clipboard.png](https://image-static.segmentfault.com/416/520/4165200960-5adaaed5b018c_articlex)
 
 这个时候我们就需要更换源了，第一次换成了中科大的源，然后发现不行，第二次更换成了阿里云的源，完美完成镜像安装，修改过后的Dockerfile如下：
 ```
@@ -201,16 +201,16 @@ docker-compose up
 ```
 打开浏览器访问 `http://localhost:8000/`，结果如图所示：
 
-![clipboard.png](/img/bV83O1)
+![clipboard.png](https://image-static.segmentfault.com/351/128/3511283204-5adab2b9978ee_articlex)
 
 ## 连接数据库
 在app目录有一个adminer.php文件，这个文件是一个类似于PHPmyadmin的数据库管理工具，比较轻量级，访问`http://localhost:8000/adminer.php`，如图所示：
 
-![clipboard.png](https://segmentfault.com/img/bV83O1)
+![clipboard.png](https://image-static.segmentfault.com/425/397/4253976955-5adab37f46b39_articlex)
 
 在表单服务器选项中填写mysql,用户名root,密码填写安装MySQL服务时的root密码，然后登陆进去，如图所示：
 
-![clipboard.png](https://segmentfault.com/img/bV83PC)
+![clipboard.png](https://image-static.segmentfault.com/373/398/3733988160-5adab3df504b8_articlex)
 然后我们就可以愉快的管理数据库了。
 # 总结
 至此，我们对PHP基本开发环境已经安装好了，如果需要安装比如Redis或memcache等服务的话，可以自行度娘，自己动手。
