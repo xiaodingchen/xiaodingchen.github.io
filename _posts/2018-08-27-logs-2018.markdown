@@ -1,0 +1,35 @@
+---
+layout:     post
+title:      "PHP开发常用命令，持续更新中···"
+subtitle:   ""
+date:       2018-08-27 15:00:00
+author:     "MoTalk"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - PHP
+---
+
+
+### awk 命令使用样例
+```
+// 输出Nginx日志中的500错误
+awk '{if($9==500){count++;printf("linenumber:%s, linecontent:%s\n", NR, $0);}} END {print "count is ", count}' /usr/local/var/logs/nginx/as.access.log
+```
+### Linux常用命令
+```
+// 查看进程
+ps -a
+
+//杀死进程
+kill -9 进程号
+
+// 查看某个端口状况
+netstat -anp|grep 80
+
+// 文件搜索 
+find / -name file1 从 '/'开始进入根文件系统搜索文件和目录 
+
+// 查看磁盘剩余空间
+df -hl 
+
+```
