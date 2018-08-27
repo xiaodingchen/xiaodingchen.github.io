@@ -60,8 +60,8 @@ duoshuo_share: false                     # set to false if you want to use Comme
 # Baidu Analytics
 ba_track_id: 626cf855c0e36f478db7e7afa591ffc9
 # Google Analytics
-# ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-# ga_domain: huangxuan.me
+ga_track_id: 'UA-124564105-1'            # Format: UA-xxxxxx-xx
+ga_domain: www.xiaodingchen.cn
 # 百度站点验证
 baidu_site_verification: pW6P5EpRTf
 # 百度自动推送
