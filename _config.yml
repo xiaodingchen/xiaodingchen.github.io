@@ -64,6 +64,8 @@ ba_track_id: 626cf855c0e36f478db7e7afa591ffc9
 # ga_domain: huangxuan.me
 # 百度站点验证
 baidu_site_verification: pW6P5EpRTf
+# 百度自动推送
+baidu_auto_push: true
 
 
 # Sidebar settings
