@@ -100,7 +100,7 @@ layout: default
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <hr><h5><a href="#">ABOUT ME</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
                             <img src="{{site.sidebar-avatar}}" />
@@ -173,12 +173,14 @@ layout: default
                         </ul>
                     </div>
                 </section>
+                <section class="visible-md visible-lg">
                 <hr>
                 <h5>支持我</h5>
                 <div class="short-about">
                     <img src="/img/account/alipay.jpeg" />
                     <img src="/img/account/wepay.jpeg" />
                 </div>
+            </section>
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
