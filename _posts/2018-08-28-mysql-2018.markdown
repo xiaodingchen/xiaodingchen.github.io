@@ -10,7 +10,7 @@ tags:
 ---
 MySQL语句执行流程图：
 
-![mysql](/img/post/mysql-1.png)
+![mysql](img/post/mysql-1.png)
 
 ### Myisam和Innodb的区别
 
