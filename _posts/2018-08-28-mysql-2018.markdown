@@ -171,17 +171,17 @@ CREATE TABLE `request_log` (
 
  PARTITION pall VALUES LESS THAN MAXVALUE ENGINE = InnoDB);
 ```
->同时还有别的分区，比如，list分区，hash分区，key分区。具体可以参考：https://www.cnblogs.com/mliudong/p/3625522.html 简单了解下
+>同时还有别的分区，比如，list分区，hash分区，key分区。具体可以参考：`https://www.cnblogs.com/mliudong/p/3625522.html` 简单了解下
 
 - 分区的时候最好不要选择默认为NULL的列，选择的列最好有索引（分区列和索引列匹配），分区在查询的时候需要锁住所有的底层表，这会带来很多的开销，要控制合适的分区的个数。分区的维护成本比较高
 
 - 在进行分区查询的时候，where条件要包含分区列，分区列不能在表达式中，这样可以在查询的时候减少分区的扫描。
 >比如：partitions select * from request_log where request_time between 1400000000 and 1500000000;
 ### 视图
-具体视图相关可以参考：https://blog.csdn.net/moxigandashu/article/details/63254901
+具体视图相关可以参考：`https://blog.csdn.net/moxigandashu/article/details/63254901`
 
 ### 全文索引
-MySQL5.6版本innodb开始支持全文索引，之前的版本只有myisam支持，具体可以参考：https://www.cnblogs.com/PaulMa/p/5238682.html
+MySQL5.6版本innodb开始支持全文索引，之前的版本只有myisam支持，具体可以参考：`https://www.cnblogs.com/PaulMa/p/5238682.html`
 
 ### 绑定变量
 以二进制的方式向服务端发送参数和句柄，节约内存和网络开销。服务器也只对器进行一次解析。<br>
@@ -234,7 +234,7 @@ relay_log = /var/lib/mysql/relay-bin
 ```
 binlog_format = mixed|row|statement
 ```
-参考文章：https://www.cnblogs.com/ivictor/p/5764978.html
+参考文章：`https://www.cnblogs.com/ivictor/p/5764978.html`
 #### 主从复制开启步骤
 
 1、在主服务器上创建一个复制账号
@@ -253,6 +253,6 @@ change master to master_host='hostip',master_user='masteruser',master_password='
 
 主索引和增量索引都要定时维护。具体相关实现可以参考：bbc，相关知识点，搞清楚文档、属性、关联字段。<br>
 相关参考文章：<br>
-https://blog.csdn.net/soar_away/article/details/52035072<br>
-https://blog.csdn.net/adparking/article/details/7080278<br>
-手册地址：http://sphinxsearch.com/docs/
+`https://blog.csdn.net/soar_away/article/details/52035072`<br>
+`https://blog.csdn.net/adparking/article/details/7080278`<br>
+手册地址：`http://sphinxsearch.com/docs/`
