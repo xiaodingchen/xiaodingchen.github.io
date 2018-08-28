@@ -33,11 +33,11 @@ MySQL语句执行流程图：
 9、数据存储方式不一样，innodb采用聚簇索引的方式存储数据，myisam采用索引和列的值分离的方式存储数据。
 
 ## MySQL优化相关
-慢查询日志，对优化MySQL查询至关重要。可以通过long_query_time参数来设置日志记录行为，当值为0时，记录所有的查询
+慢查询日志，对优化MySQL查询至关重要。可以通过 `long_query_time` 参数来设置日志记录行为，当值为0时，记录所有的查询
 
-使用show global status SQL语句查看当前连接数(threads_connected)、查询线程数(threads_running)、查询数(queries)
+使用 `show global status` SQL语句查看当前连接数(threads_connected)、查询线程数(threads_running)、查询数(queries)
 
-使用 show processlist SQL语句查看当前连接线程是否有废线程，比如locked、free 状态的
+使用 `show processlist` SQL语句查看当前连接线程是否有废线程，比如locked、free 状态的
 
 设计表的时候选择合适的数据类型，尽量使用NOT NULL，列不要太多
 
@@ -70,7 +70,7 @@ alter table table_name enable keys;
 
 
 ### 索引相关
-大多数MySQL存储引擎都实现了b-tree索引，b-tree索引是有序的，在order by 和group by语句中也会用到索引
+大多数MySQL存储引擎都实现了b-tree索引，b-tree索引是有序的，在 `order by` 和 `group by`语句中也会用到索引
 
 1、索引总是遵循最左前缀
 
