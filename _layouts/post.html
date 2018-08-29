@@ -47,6 +47,11 @@ layout: default
 				{{ content }}
 
                 <hr>
+                <section>
+                        <hr>
+                        <div class="btn btn-pay" data-toggle="modal" data-target="#likeModal" data-target=".bs-example-modal-sm">赞赏支持</div>
+                </section>
+                <hr>
 
                 {% if site.duoshuo_share && site.duoshuo_username %}
                 <!-- 多说 Share start -->
@@ -206,14 +211,10 @@ layout: default
                         </ul>
                     </div>
                 </section>
-                <section class="visible-md visible-lg">
-                <hr>
-                <h5>支持我</h5>
-                <div class="short-about">
-                    <img src="/img/account/alipay.jpeg" />
-                    <img src="/img/account/wepay.jpeg" />
-                </div>
-            </section>
+                <section>
+                        <hr>
+                        <div class="btn btn-pay" data-toggle="modal" data-target="#likeModal" data-target=".bs-example-modal-sm">赞赏支持</div>
+                </section>
             </div>
         </div>
     </div>
