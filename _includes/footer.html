@@ -77,6 +77,31 @@
     </div>
 </footer>
 
+<!-- like modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+                <div class="modal-content"></div>
+                <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="likeTabs" role="tablist" >
+                            <li role="presentation" class="active"><a href="#weipay" data-toggle="tab" id="wei-tab">微信</a></li>
+                            <li role="presentation"><a href="#alipay" data-toggle="tab" id="ali-tab">支付宝</a></li>
+                    </ul>
+                    <div id="likeTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active in" id="weipay" aria-labelledby="wei-tab">
+                                <img src="/img/account/wepay.jpeg" />
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="alipay" aria-labelledby="profile-tab">
+                                    <img src="/img/account/alipay.jpeg" />
+                            </div>
+                    </div>
+                </div>
+        </div>
+</div>
+<!-- like modal end -->
+
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
