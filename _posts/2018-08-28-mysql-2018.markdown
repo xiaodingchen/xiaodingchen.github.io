@@ -176,7 +176,7 @@ CREATE TABLE `request_log` (
 - 分区的时候最好不要选择默认为NULL的列，选择的列最好有索引（分区列和索引列匹配），分区在查询的时候需要锁住所有的底层表，这会带来很多的开销，要控制合适的分区的个数。分区的维护成本比较高
 
 - 在进行分区查询的时候，where条件要包含分区列，分区列不能在表达式中，这样可以在查询的时候减少分区的扫描。
->比如：partitions select * from request_log where request_time between 1400000000 and 1500000000;
+>比如：`partitions select * from request_log where request_time between 1400000000 and 1500000000;`
 ### 视图
 具体视图相关可以参考：`https://blog.csdn.net/moxigandashu/article/details/63254901`
 
@@ -191,9 +191,9 @@ MySQL5.6版本innodb开始支持全文索引，之前的版本只有myisam支持
 ### 配置优化：
 对于innodb来说最重要的两个配置为：
 
-- innodb_buffer_pool_size缓冲池大小
+- `innodb_buffer_pool_size`缓冲池大小
 
-- innodb_log_file_size 日志文件大小
+- `innodb_log_file_size` 日志文件大小
 
 
 
@@ -239,7 +239,7 @@ binlog_format = mixed|row|statement
 
 1、在主服务器上创建一个复制账号
 
-2、主库从库配置server_id选项，一般是机器IP32位的后八位，主库配置二进制文件地址，从库配置中继日志文件地址，可以通过show master status 查看binlog日志的名字
+2、主库从库配置`server_id`选项，一般是机器IP32位的后八位，主库配置二进制文件地址，从库配置中继日志文件地址，可以通过 `show master status` 查看 `binlog` 日志的名字
 
 3、从库启动复制：
 
@@ -247,7 +247,7 @@ binlog_format = mixed|row|statement
 ```
 change master to master_host='hostip',master_user='masteruser',master_password='password',master_log_file='binlogname',master_log_pos=0; 
 ```
->master_log_pos设置为0表示从日志开头读起，配置好之后，开始执行命令start slave;
+> `master_log_pos`设置为0表示从日志开头读起，配置好之后，开始执行命令 `start slave`;
 
 ## sphinx全文索引
 
