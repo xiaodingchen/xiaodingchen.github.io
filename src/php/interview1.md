@@ -158,7 +158,7 @@ class handleExceptions
 Cookie: PHPSESSID=q0fm8up72q58ne1b6khf37dlos
 
 PHP提供了很简单两个全局变量来操作`cookie`和`session`，分别是 `$_COOKIE` 和 `$_SESSION`，开发者不需要考虑sessionID的问题。PHP默认会把session存储在服务器的临时目录中，并在每次运行时进行GC操作。你可以通过配置 php.ini 文件改变它。同时你也可以通过自定义会话管理器来管理会话。自定义会话管理可以实现共享session。下面是利用 Redis 来实现 session 的存储的例子。
-```phpregexp
+```php
 
 class sysSession implements SessionHandlerInterface
 {
@@ -208,7 +208,7 @@ class sysSession implements SessionHandlerInterface
 
 ```
 使用示例：
-```phpregexp
+```php
 
 $redis = new Redis;
 $redis->open("ip", "port", "timeout");

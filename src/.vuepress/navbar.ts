@@ -8,6 +8,18 @@ export default navbar([
         link: "/golang/",
         icon: "book"
     },
+    {
+        text: "PHP",
+        prefix: "/php",
+        link: "/php/",
+        icon: "book"
+    },
+    {
+        text: "技术杂谈",
+        prefix: "/mark",
+        link: "/mark/",
+        icon: "book"
+    },
   // {
   //   text: "指南",
   //   icon: "lightbulb",

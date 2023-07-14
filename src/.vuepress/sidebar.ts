@@ -9,5 +9,17 @@ export default sidebar({
       prefix: "golang/",
       children: "structure",
     },
+    {
+      text: "PHP",
+      icon: "book",
+      prefix: "php/",
+      children: "structure",
+    },
+    {
+      text: "技术杂谈",
+      icon: "book",
+      prefix: "mark/",
+      children: "structure",
+    },
   ],
 });
