@@ -63,7 +63,7 @@ Redis 3.0中近似LRU算法通过增加待淘汰元素池的方式进一步优�
 - 通过图4和图2对比：得出增加采样值，在3.0中将进一步改善LRU淘汰效果逼近理论LRU
 - 对比图2和图1：在3.0中采样值为10时，效果非常接近理论LRU
 
-采样值设置通过maxmemory-samples指定，可通过CONFIG SET maxmemory-samples <count>动态设置，也可启动配置中指定maxmemory-samples <count>
+采样值设置通过maxmemory-samples指定，可通过CONFIG SET maxmemory-samples <count>动态设置，也可启动配置中指定maxmemory-samples </count>
 
 源码解析
 
