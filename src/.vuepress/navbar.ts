@@ -26,6 +26,11 @@ export default navbar([
         link: "/redis/",
         icon: "book"
     },
+    {
+      text: "面试总结",
+      icon: "book",
+      link: "/tag/面试/",
+    },
   // {
   //   text: "指南",
   //   icon: "lightbulb",

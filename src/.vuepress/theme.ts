@@ -46,6 +46,9 @@ export default hopeTheme({
     description: "码说256，一个程序员的成长记录",
   },
   plugins: {
+    sitemap:{
+      extraUrls: ['/category/', '/tag/'],
+    },
     blog: {
       excerptLength: 0,
     },
