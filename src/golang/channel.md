@@ -1,9 +1,9 @@
 ---
-title: Channel的使用
-order: 2
+title: Go面试之Channel的使用
+order: 5
 category: 
   - golang
-tag: [go, channel, 并发]
+tag: [go, golang, channel, 并发安全, 源码, 面试, 面试总结]
 ---
 ## channel
 channel是Golang在语言层面提供的goroutine间的通信方式。channel 是一个通道，用于端到端的数据传输，这有点像我们平常使用的消息队列，只不过 channel 的发送方和接受方是 goroutine 对象，属于内存级别的通信。
