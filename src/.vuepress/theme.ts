@@ -3,11 +3,11 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://ixlymsy.top",
+  hostname: "https://www.ixlymsy.top",
 
   author: {
     name: "码说256",
-    url: "https://ixlymsy.top",
+    url: "https://www.ixlymsy.top",
   },
 
   iconAssets: "fontawesome-with-brands",
