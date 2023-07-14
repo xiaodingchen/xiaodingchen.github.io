@@ -50,7 +50,7 @@ export default hopeTheme({
       excerptLength: 0,
     },
     autoCatalog:{
-      exclude: ['/demo/', '/guide/', '/slides/']
+      exclude: ['/demo/', '/guide/', '/slides/', '/images/', '/images']
     },
     // You should generate and use your own comment service
     comment: {
