@@ -7,7 +7,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "个人成长全记录-码说256",
-  description: "码说256，一个程序员的成长记录",
+  description: "码说256，一个程序员的成长记录，专注于PHP、Golang后端，Vue，小程序等前端开发",
 
   theme,
 
