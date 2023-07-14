@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://ixlymsy.top/sitemap.xml
+Sitemap: https://www.ixlymsy.top/sitemap.xml
