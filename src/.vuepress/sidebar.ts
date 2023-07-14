@@ -16,9 +16,15 @@ export default sidebar({
       children: "structure",
     },
     {
-      text: "技术杂谈",
+      text: "MySQL",
       icon: "book",
-      prefix: "mark/",
+      prefix: "mysql/",
+      children: "structure",
+    },
+    {
+      text: "Redis",
+      icon: "book",
+      prefix: "redis/",
       children: "structure",
     },
   ],

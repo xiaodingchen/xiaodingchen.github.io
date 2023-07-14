@@ -15,9 +15,15 @@ export default navbar([
         icon: "book"
     },
     {
-        text: "技术杂谈",
-        prefix: "/mark",
-        link: "/mark/",
+        text: "MySQL",
+        prefix: "/mysql",
+        link: "/mysql/",
+        icon: "book"
+    },
+    {
+        text: "Redis",
+        prefix: "/redis",
+        link: "/redis/",
         icon: "book"
     },
   // {
