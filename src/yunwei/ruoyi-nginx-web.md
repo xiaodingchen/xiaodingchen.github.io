@@ -3,7 +3,7 @@ title: 若依Nginx配置示例
 order: 4
 category:
 - yunwei
-  tag: [nginx, 若依]
+tag: [nginx, 若依]
 ---
 
 ## nginx 配置

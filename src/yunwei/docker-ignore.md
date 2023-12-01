@@ -3,7 +3,7 @@ title: docker忽略相关文件
 order: 2
 category:
 - yunwei
-  tag: [docker, 源码, 面试, 面试总结]
+tag: [docker, 源码, 面试, 面试总结]
 ---
 ## 发现问题
 在`docker build`时发现docker context 随着时间的增长，build越慢，context越大。

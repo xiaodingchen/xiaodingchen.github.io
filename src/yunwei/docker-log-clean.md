@@ -3,7 +3,7 @@ title: docker清理日志
 order: 3
 category:
 - yunwei
-  tag: [docker, 源码, 面试, 面试总结]
+tag: [docker, 源码, 面试, 面试总结]
 ---
 
 ## 查询docker容器日志

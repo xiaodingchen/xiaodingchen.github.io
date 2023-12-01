@@ -3,7 +3,7 @@ title: 若依前端配置
 order: 1
 category:
 - yunwei
-  tag: [nginx, 源码, 面试, 面试总结]
+tag: [nginx, 源码, 面试, 面试总结]
 ---
 ## 修改前端代码
 

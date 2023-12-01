@@ -3,7 +3,7 @@ title: 文本超出宽度省略号
 order: 1
 category:
 - fe
-  tag: [前端, 源码, css, 面试总结]
+tag: [前端, 源码, css, 面试总结]
 ---
 ## 单行文本省略号
 ```css
