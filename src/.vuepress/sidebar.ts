@@ -27,5 +27,17 @@ export default sidebar({
       prefix: "redis/",
       children: "structure",
     },
+    {
+      text: "前端",
+      icon: "book",
+      prefix: "fe/",
+      children: "structure",
+    },
+    {
+      text: "运维",
+      icon: "book",
+      prefix: "yunwei/",
+      children: "structure",
+    },
   ],
 });

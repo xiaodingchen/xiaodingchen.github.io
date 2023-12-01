@@ -27,6 +27,18 @@ export default navbar([
         icon: "book"
     },
     {
+        text: "前端",
+        prefix: "/fe",
+        link: "/fe/",
+        icon: "book"
+    },
+    {
+        text: "运维",
+        prefix: "/yunwei",
+        link: "/yunwei/",
+        icon: "book"
+    },
+    {
       text: "面试总结",
       icon: "book",
       link: "/tag/面试/",
