@@ -367,3 +367,21 @@ $redis->decr(key);
 $redis->rpush();
 $redis-exec();
 ```
+#### mysql处理超卖
+商城下单这个操作，是不是没必要考虑乐观锁和悲观锁
+
+展示页面直接无事物查询
+
+`select * from goods where id = 1`
+
+给客户展示是否可以下单
+
+
+
+一旦客户的下单操作发动了
+
+只要开启事物执行
+
+`update goods set stock = stock - 1 where id = 1 and stock >=下单数量;`
+
+这一句其实就是悲观锁的那个意思了，反正mysql在做update操作的时候也会根据查询条件锁定行或者表
